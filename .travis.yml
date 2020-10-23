@@ -4,7 +4,7 @@ branches:
   only:
   - master
 script:
-- choco pack iso7z\\iso7z.nuspec
+- choco pack exfat7z\\exfat7z.nuspec
 after_script:
 - choco apikey --key $CHOCOAPIKEY --source https://push.chocolatey.org/
 - choco push
