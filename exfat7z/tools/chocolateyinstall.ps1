@@ -12,7 +12,7 @@ $packageArgs["packageName"] = "$($env:ChocolateyPackageName)"
 $packageArgs["fileFullPath"] = "$(Join-Path (Split-Path -parent $MyInvocation.MyCommand.Definition) $filename)"
 
 $archiveLocation = Get-ChocolateyWebFile @packageArgs
-$extractLocation = "$(Join-Path (Split-Path -parent $archiveLocation) "Formats")"
+$extractLocation = "$(Join-Path (Split-Path -parent $archiveLocation) 'Formats')"
 
 $spliter = "path to executable:"
 $7zLocation = "$(Split-Path -parent ((7z --shimgen-noop | Select-String $spliter) -split $spliter | ForEach-Object Trim)[1])"
