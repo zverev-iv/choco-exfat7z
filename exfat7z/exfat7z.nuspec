@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>exfat7z</id>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <packageSourceUrl>https://github.com/zverev-iv/choco-exfat7z</packageSourceUrl>
     <owners>zverev-iv</owners>
     <title>exfat7z (Install)</title>
